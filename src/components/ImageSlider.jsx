@@ -1,21 +1,25 @@
 import React, {useState} from 'react'
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
+import lobster from "../assets/Slider_image1.avif"
+import sushi from "../assets/Slider_image2.avif"
+import pasta from "../assets/Slider_image3.avif"
+import salmon from "../assets/Slider_image4.avif"
 
 const ImageSlider = () => {
     const slides = [
         {
-            url: 'https://images.unsplash.com/photo-1464093515883-ec948246accb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2659&q=80',
+            url: lobster,
             title: 'Lobster',
         },
         {
-            url: 'https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+            url: sushi,
             title: 'Sushi',
         }, {
-            url: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+            url: pasta,
             title: 'Pasta',
         }, {
-            url: 'https://images.unsplash.com/photo-1539136788836-5699e78bfc75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+            url: salmon,
             title: 'Salmon',
         }
     ];
