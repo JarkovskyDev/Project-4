@@ -5,7 +5,7 @@ import image3 from "../assets/Rooms_image3.avif"
 
 const Rooms = () => {
   return (
-    <div className='max-w-[1400px] h-[500px] bg-blue-100 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-3 gap-4'>
+    <div name="rooms" className='max-w-[1400px] h-[500px] bg-blue-100 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-3 gap-4'>
         <div className='lg:top-20 relative lg:col-span-1 col-span-2'>
             <h3 className='text-2xl font-bold'>Fine Interior Rooms</h3>
             <p className='pt-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam repellat repellendus quasi omnis ad porro.</p>

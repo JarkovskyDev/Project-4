@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 import lobster from "../assets/Slider_image1.avif"
@@ -42,8 +42,18 @@ const ImageSlider = () => {
         setCurrentIndex(slideIndex)
     }
 
+    useEffect (() => {
+        const intervalId = setInterval(() => {
+            nextSlide();
+        }, 3000);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, [currentIndex]);
+
   return (
-    <div className='max-w-[1440px] h-[580px] w-full m-auto py-16 px-4 relative group'>
+    <div name="amenities" className='max-w-[1440px] h-[580px] w-full m-auto py-16 px-4 relative group'>
         <div 
             className='w-full h-full rounded-2xl bg-center bg-cover duration-500' 
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

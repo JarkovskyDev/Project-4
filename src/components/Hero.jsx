@@ -3,7 +3,7 @@ import BG from "../assets/Hero_image.jpeg"
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen '>
+    <div name="home" className='w-full h-screen '>
         <img className='top-0 left-0 w-full h-screen object-cover' src={BG} alt="/" />
         <div className='bg-black/30 absolute top-0 left-0 w-full h-screen'/>
         <div className='absolute top-0 w-full h-full flex flex-col justify-center text-white'>

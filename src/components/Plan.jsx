@@ -7,7 +7,7 @@ import image5 from "../assets/Plan_image5.avif"
 
 const Plan = () => {
   return (
-    <div className='max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
+    <div name="reservations" className='max-w-[1400px] m-auto py-16 px-4 grid lg:grid-cols-2 gap-4'>
         {/*LEFT SIDE */}
         <div className='grid grid-cols-2 grid-rows-6 h-[80vh]'>
             <img className='row-span-3 object-cover w-full h-full p-2' src={image1} alt="/" />
